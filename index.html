@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator- JQuery</title>
+    
+    <!-- CUSTOM CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+    
+   
+    <!-- CUSTOM JS FILE -->
+    <script src="script.js" defer></script>
+  
+
+</head>
+<body>
+
+    <div class="calculator">
+
+        <h1 class="form-heading">Simple Calculator</h1>
+
+        <div class="row">
+           <input type="text" class="display" id="display" name="display" placeholder="">
+        </div>
+
+        <div class="row">
+            <div class="button" id="ac" onclick="display.value=''">AC</div>
+            <div class="button" id="backspace" onclick="display.value = display.value.slice(0, -1)">back</div>
+            <div class="button" id="plusMinus" onclick="display.value = display.value*-1">+/-</div>
+            <div class="button" id="percent" onclick="display.value +='00'">00</div>
+        </div>
+
+        <div class="row">
+            <div class="button" id="seven" onclick="display.value +='7'">7</div>
+            <div class="button" id="eight" onclick="display.value +='8'">8</div>
+            <div class="button" id="nine" onclick="display.value +='9'">9</div>
+            <div class="button" id="divide" onclick="display.value +='/'">/</div>
+        </div>
+
+        <div class="row">
+            <div class="button" id="four" onclick="display.value +='4'">4</div>
+            <div class="button" id="five" onclick="display.value +='5'">5</div>
+            <div class="button" id="six" onclick="display.value +='6'">6</div>
+            <div class="button" id="multiply" onclick="display.value +='*'">*</div>
+        </div>
+
+        <div class="row">
+            <div class="button" id="one" onclick="display.value +='1'">1</div>
+            <div class="button" id="two" onclick="display.value +='2'">2</div>
+            <div class="button" id="three" onclick="display.value +='3'">3</div>
+            <div class="button" id="subtract" onclick="display.value +='-'">-</div>
+        </div>
+
+        <div class="row">
+            <div class="button" id="zero" onclick="display.value +='0'">0</div>
+            <div class="button" id="decimal" onclick="display.value +='.'">.</div>
+            <div class="button" id="plus" onclick="display.value +='+'">+</div>
+            <div class="button" id="equals" onclick="display.value = eval(display.value)">=</div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

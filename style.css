@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.form-heading {
+  margin: 1.4rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #cf0a6c;
+}
+
+.calculator {
+ margin-top: 3rem;
+  width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+  background: #fafafa;
+  box-shadow: 15px 15px 30px #c6c6c6, -15px -15px 30px #ffffff;
+  font-weight: 600;
+}
+
+#display {
+  width: 100%;
+  text-align: end;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #fafafa;
+  box-shadow: inset 9px 9px 18px #dfdfdf, inset -9px -9px 18px #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  height: 3.5rem;
+}
+
+.row{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.row div {
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #e1e1e1);
+  box-shadow: 7px 7px 5px #d2d2d2, -7px -7px 5px #ffffff;
+  width: 60px;
+  padding: 10px 0;
+  margin: 8px 4px;
+  cursor: pointer;
+}
+
+.row div:active{
+  color: #cf0a6c
+}
+
